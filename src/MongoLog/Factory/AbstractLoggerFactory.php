@@ -24,6 +24,7 @@ class AbstractLoggerFactory implements AbstractFactoryInterface
 	{
 		$config = $serviceLocator->get('Config');
 		if (!isset($config['mongo_logs']['loggers'][$requestedName])) return false;
+
 		return true;
 	}
 
