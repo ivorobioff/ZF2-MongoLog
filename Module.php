@@ -23,9 +23,6 @@ class Module implements ConfigProviderInterface
 
 			'mongo_logs' => [
 				'loggers' => [
-					'MongoLog\General' => 'general_logs',
-					'MongoLog\Errors' => 'error_logs',
-					'MongoLog\Spam' => 'spam_logs'
 				]
 			]
 		];
