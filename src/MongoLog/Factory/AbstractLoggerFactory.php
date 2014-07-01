@@ -47,7 +47,7 @@ class AbstractLoggerFactory implements AbstractFactoryInterface
 
 		$writer = new MongoDB(
 			$mongoConnector->getClient(),
-			$mongoConnector->getConfig()['database'],
+			$config['database'],
 			$config['loggers'][$requestedName]
 		);
 
